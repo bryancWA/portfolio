@@ -5,6 +5,7 @@ const OUT_DIR = path.resolve(__dirname, 'public');
 
 module.exports = {
   // devtool: 'eval-source-map',
+  mode: 'development',
   entry: {
     main: SRC_DIR,
   },
@@ -15,7 +16,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.m?(js|jsx)/,
+        test: /\.m?(js|jsx)/i,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -25,21 +26,19 @@ module.exports = {
           },
         },
       },
-      // {
-      //   test: /\.(png|jpeg|gif)?/i,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //     },
-      //   ]
-      // },
+      {
+        test: /\.(png|jpe?g|gif)?/i,
+        include: [path.resolve(__dirname, 'Images')],
+        loader: 'file-loader',
+         
+
+      },
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
     ],
   },
-  mode: 'development',
   resolve: {
     extensions: ['.js', '.jsx'],
   },
