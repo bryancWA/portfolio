@@ -15,8 +15,10 @@ const App = () => {
     setAnchorEl(event.currentTarget);
   }
 
-  const handleMenuClose = () => {
+  const handleMenuClose = (event) => {
+    // document.getElementById(event.target.value).scrollIntoView()
     setAnchorEl(null);
+
   }
 
   const handleResumeModal = () => {
@@ -30,15 +32,21 @@ const App = () => {
       anchorEl={anchorEl}
       onClose={handleMenuClose}
       open={Boolean(anchorEl)}> 
-        <MenuItem onClick={handleMenuClose}>Projects</MenuItem>
+        <MenuItem value="project-div" onClick={handleMenuClose}>Projects</MenuItem>
         <MenuItem onClick={handleMenuClose}>About</MenuItem>
         <MenuItem onClick={handleMenuClose}>Contact</MenuItem>
       </Menu>
-      <h2 onClick={handleResumeModal}>Bryan</h2> 
-      <h2>Clark</h2>
-      <h3>Frontend</h3>
-      <h3>Engineering</h3>
-      <Project />
+      <div id="name-div">
+        <h2 onClick={handleResumeModal}>Bryan</h2> 
+        <h2>Clark</h2>
+      </div>
+      <div id="title-div">
+        <h3>Frontend</h3>
+        <h3>Engineering</h3>
+      </div>
+      <div id="project-div">
+        <Project />
+      </div>
       <About />
       <Contact />
       <ResumeModal openResume={openResume} setOpenResume={setOpenResume}/>

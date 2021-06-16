@@ -9,7 +9,7 @@ const Project = () => {
   const [openBlue, setOpenBlue] = useState(false);
 
   return (
-    <div>
+    <div id="project-div">
       <h2> Projects </h2>
       <SnagModal openSnag={openSnag} setOpenSnag={setOpenSnag}/>
       <BlueOceanModal openBlue={openBlue} setOpenBlue={setOpenBlue}/>
