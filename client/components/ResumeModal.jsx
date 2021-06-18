@@ -10,12 +10,13 @@ const ResumeModal = ({ openResume, setOpenResume }) => {
     top: '50%',
     left: '50%',
     width: '600px',
-    height: '800px',
+    height: '600px',
     transform: 'translate(-50%, -50%)',
     backgroundColor: 'white',
     padding: '50px',
     zIndex: 1000,
-    textAlign: 'center'
+    textAlign: 'center',
+    overflowY: 'scroll'
   }
 
   const OVERLAY_STYLE = {
