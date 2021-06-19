@@ -4,6 +4,10 @@ import About from './About.jsx';
 import Contact from './Contact.jsx';
 import ResumeModal from './ResumeModal.jsx';
 import { Menu, MenuItem, Button } from '@material-ui/core';
+import image3 from '../../Images/spiderTree.jpeg';
+import styles from '../../public/styles.css';
+import image4 from '../../Images/riverRocks.jpeg';
+import image5 from '../../Images/logTrail.jpeg';
 
 
 const App = () => {
@@ -52,35 +56,43 @@ const App = () => {
   }, [scrollRef])
 
   return (
-    <div>
-      <Button onClick={handleMenu}>Menu</Button>
-      <Menu 
-      anchorEl={anchorEl}
-      style={{position: 'absolute' }}
-      keepMounted
-      onBackdropClick={handleMenuClose}
-      open={Boolean(anchorEl)}> 
-        <MenuItem  onClick={() => handleScroll('projRef')}>Projects</MenuItem>
-        <MenuItem  onClick={() => handleScroll('aboutRef')}>About</MenuItem>
-        <MenuItem  onClick={() => handleScroll('contactRef')}>Contact</MenuItem>
-      </Menu>
-      <div id='landing-info' style={{ height: '600px', width: '500px', border: '2px solid black'}}>
-        <div id="name-div">
-          <h2 onClick={handleResumeModal}>Bryan</h2> 
+    <div style={{background: '#dfd8d8', top: '0', right: '0', bottom: '0', left: '0'}}>
+      <div id="landing-info-container">
+        <div id="landing-header" style={{ height: '300px', width: '100%',
+        backgroundImage: `url('${image4}')`, 
+        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)'}}></div>
+        </div>
+      <div id='landing-info' style={{ justifyContent: 'center', height: '500px', width: '100%',}}>
+        <Button onClick={handleMenu}>Menu</Button>
+        <Menu 
+        anchorEl={anchorEl}
+        style={{position: 'absolute' }}
+        keepMounted
+        onBackdropClick={handleMenuClose}
+        open={Boolean(anchorEl)}> 
+          <MenuItem  onClick={() => handleScroll('projRef')}>Projects</MenuItem>
+          <MenuItem  onClick={() => handleScroll('aboutRef')}>About</MenuItem>
+          <MenuItem  onClick={() => handleScroll('contactRef')}>Contact</MenuItem>
+        </Menu>
+        <div id="name-div" onClick={handleResumeModal} style={{textAlign: 'right', marginRight: '100px'}}>
+          <h2 >Bryan</h2> 
           <h2>Clark</h2>
         </div>
-        <div id="title-div">
+        <div id="title-div" style={{textAlign: 'right', marginRight: '100px'}}>
           <h3>Frontend</h3>
           <h3>Engineering</h3>
         </div>
       </div>
-      <div id="project-div" ref={projRef} style={{ height: '600px', width: '500px', border: '2px solid black'}}>
+      <div id="project-header-container">
+        <div id="project-header" style={{backgroundImage: `url('${image5}')`}}></div>
+      </div>
+      <div id="project-div" ref={projRef} style={{  height: '600px', width: '500px'}}>
         <Project />
       </div>
       <div id="about" ref={aboutRef} style={{ height: '600px', width: '500px', border: '2px solid black'}}>
         <About />
       </div>
-      <div id="contact" ref={contactRef} style={{ height: '600px', width: '500px', border: '2px solid black'}}>
+      <div id="contact" ref={contactRef} style={{ backgroundImage: `url('${image3}')`, height: '600px', width: '500px', border: '2px solid black'}}>
         <Contact />
       </div>
       <ResumeModal openResume={openResume} setOpenResume={setOpenResume}/>

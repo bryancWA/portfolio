@@ -1,0 +1,55 @@
+#first-separator {
+  display: flex;
+  flex-direction: row;
+}
+
+#first-separator .upswing {
+  width: 100%;
+  margin: 10px 0;
+  height: 3px;
+  background: black;
+  transform: skew(0deg, 15deg);
+}
+#landing-info-container {
+  height: 302px;
+  width: 100%;
+  background: black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+#landing-header {
+  background-size: 100% 1200px;
+  background-position: bottom right;
+  height: 600px;
+  width: 400px;
+  background-repeat: no-repeat;
+}
+
+#landing-header::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+
+
+#project-header-container {
+  height: 403px;
+  width: 100%;
+  
+  background: black;
+  clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 84%);
+  
+
+}
+
+#project-header {
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+  clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 84%);
+  background-position: center right;
+}
