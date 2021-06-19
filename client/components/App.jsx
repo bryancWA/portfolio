@@ -56,14 +56,14 @@ const App = () => {
   }, [scrollRef])
 
   return (
-    <div style={{background: '#dfd8d8', top: '0', right: '0', bottom: '0', left: '0'}}>
+    <div style={{background: 'rgb(238, 241, 255)', top: '0', right: '0', bottom: '0', left: '0'}}>
       <div id="landing-info-container">
         <div id="landing-header" style={{ height: '300px', width: '100%',
         backgroundImage: `url('${image4}')`, 
         clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)'}}></div>
         </div>
-      <div id='landing-info' style={{ justifyContent: 'center', height: '500px', width: '100%',}}>
-        <Button onClick={handleMenu}>Menu</Button>
+      <div id='landing-info' style={{ height: '500px', width: '100%',}}>
+        <Button onClick={handleMenu} style={{ height: '75px'}}>Menu</Button>
         <Menu 
         anchorEl={anchorEl}
         style={{position: 'absolute' }}
@@ -74,26 +74,37 @@ const App = () => {
           <MenuItem  onClick={() => handleScroll('aboutRef')}>About</MenuItem>
           <MenuItem  onClick={() => handleScroll('contactRef')}>Contact</MenuItem>
         </Menu>
-        <div id="name-div" onClick={handleResumeModal} style={{textAlign: 'right', marginRight: '100px'}}>
-          <h2 >Bryan</h2> 
-          <h2>Clark</h2>
-        </div>
-        <div id="title-div" style={{textAlign: 'right', marginRight: '100px'}}>
-          <h3>Frontend</h3>
-          <h3>Engineering</h3>
+        <div id="title_name">
+          <div id="name-div" onClick={handleResumeModal} style={{textAlign: 'right', marginRight: '100px'}}>
+            <h2 >Bryan</h2> 
+            <h2>Clark</h2>
+          </div>
+          <div id="title-div" style={{textAlign: 'right', marginRight: '100px'}}>
+            <h3>Frontend</h3>
+            <h3>Engineering</h3>
+          </div>
         </div>
       </div>
       <div id="project-header-container">
-        <div id="project-header" style={{backgroundImage: `url('${image5}')`}}></div>
+        <div id="project-header" style={{backgroundImage: `url('${image4}')`}}></div>
       </div>
-      <div id="project-div" ref={projRef} style={{  height: '600px', width: '500px'}}>
+      <div id="project-div" ref={projRef} style={{  height: '500px', width: '500px'}}>
         <Project />
       </div>
-      <div id="about" ref={aboutRef} style={{ height: '600px', width: '500px', border: '2px solid black'}}>
+      <div id="about-header-container">
+        <div id="about-header" style={{backgroundImage: `url('${image4}')`}}></div>
+      </div>
+      <div id="about" ref={aboutRef} style={{ height: '500px', width: '500px'}}>
         <About />
       </div>
-      <div id="contact" ref={contactRef} style={{ backgroundImage: `url('${image3}')`, height: '600px', width: '500px', border: '2px solid black'}}>
+      <div id="contact-header-container">
+        <div id="contact-header" style={{backgroundImage: `url('${image4}')`}}></div>
+      </div>
+      <div id="contact" ref={contactRef} style={{  height: '500px', width: '500px'}}>
         <Contact />
+      </div>
+      <div id="bottom-image-container">
+        <div id="bottom-image" style={{backgroundImage: `url('${image4}')`}}></div> 
       </div>
       <ResumeModal openResume={openResume} setOpenResume={setOpenResume}/>
     </div>

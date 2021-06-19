@@ -1,3 +1,8 @@
+body {
+  margin: 0 0;
+}
+
+
 #first-separator {
   display: flex;
   flex-direction: row;
@@ -7,24 +12,35 @@
   width: 100%;
   margin: 10px 0;
   height: 3px;
-  background: black;
+  background: rgb(238, 241, 255);
   transform: skew(0deg, 15deg);
 }
-#landing-info-container {
+/* #landing-info-container {
   height: 302px;
   width: 100%;
-  background: black;
+  background: #dfd8d8;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-}
+} */
 #landing-header {
-  background-size: 100% 1200px;
-  background-position: bottom right;
+  background-position: right top 32%;
   height: 600px;
   width: 400px;
   background-repeat: no-repeat;
 }
 
-#landing-header::before {
+#landing-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+#title_name {
+  justify-content: center;
+  float: right;
+  margin: 10% 50px 20px 35%;
+}
+/* #landing-header::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -32,11 +48,11 @@
   bottom: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, .25);
-}
+} */
 
 
 
-#project-header-container {
+/* #project-header-container {
   height: 403px;
   width: 100%;
   
@@ -44,12 +60,43 @@
   clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 84%);
   
 
-}
+} */
 
 #project-header {
   height: 400px;
   width: 100%;
   justify-content: center;
   clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 84%);
-  background-position: center right;
+  background-position: right top 35%;
+}
+
+#about-header {
+  height: 400px;
+  width: 100%;
+  background-position: right top 45%;
+  clip-path: polygon(0 0, 100% 31%, 100% 58%, 0 78%);
+}
+
+#contact-header {
+  height: 400px;
+  width: 100%;
+  background-position: right top 55%;
+  clip-path: polygon(0 0, 100% 51%, 100% 100%, 0 100%);
+}
+
+#bottom-image {
+  height: 400px;
+  width: 100%;
+  background-position: right top 65%;
+  clip-path: polygon(0 38%, 100% 0, 100% 100%, 0 100%);
+}
+
+#about {
+  width: 100%;
+  margin: 20px 30% 20px 30%;
+}
+#about-div {
+  margin: 20px 30% 20px 30%;
+  width: 100%;
+  text-align: center;
 }
