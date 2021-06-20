@@ -63,7 +63,7 @@ const App = () => {
         clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)'}}></div>
         </div>
       <div id='landing-info' style={{ height: '500px', width: '100%',}}>
-        <Button onClick={handleMenu} id="menu-button"><i class="fas fa-bars"></i></Button>
+        <Button onClick={handleMenu} id="menu-button"><i className="fas fa-bars"></i></Button>
         <Menu 
         anchorEl={anchorEl}
         style={{position: 'absolute' }}
