@@ -155,3 +155,20 @@ p {
   text-align: center;
 }
 
+#contact-components {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 100px;
+  width: 600px;
+}
+
+#contact-info-div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 20px;
+}
+
+#contact-div h2 {
+  margin: 50px 0 100px 100px;
+}
