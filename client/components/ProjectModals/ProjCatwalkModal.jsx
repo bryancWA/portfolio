@@ -69,8 +69,7 @@ const ProjCatwalkModal = ({ openCatwalk, setOpenCatwalk }) => {
     , document.getElementById('portal')));
   } else {
     return (<div onClick={handleOpenModal}>
-      Open Catwalk
-      <img src={image1} style={{height: '100px', width: '150px'}}/>
+      <img src={image1} style={{height: '200px', width: '250px'}}/>
       </div>)
   }
 

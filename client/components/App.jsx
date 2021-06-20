@@ -63,7 +63,7 @@ const App = () => {
         clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)'}}></div>
         </div>
       <div id='landing-info' style={{ height: '500px', width: '100%',}}>
-        <Button onClick={handleMenu} style={{ height: '75px'}}>Menu</Button>
+        <Button onClick={handleMenu} id="menu-button"><i class="fas fa-bars"></i></Button>
         <Menu 
         anchorEl={anchorEl}
         style={{position: 'absolute' }}
@@ -86,13 +86,13 @@ const App = () => {
         </div>
       </div>
       <div id="project-header-container">
-        <div id="project-header" style={{backgroundImage: `url('${image4}')`}}></div>
+        <div id="project-header"  style={{backgroundImage: `url('${image4}')`}}></div>
       </div>
-      <div id="project-div" ref={projRef} style={{  height: '500px', width: '500px'}}>
+      <div id="project-div-container" ref={projRef} style={{  height: '500px', width: '500px'}}>
         <Project />
       </div>
       <div id="about-header-container">
-        <div id="about-header" style={{backgroundImage: `url('${image4}')`}}></div>
+        <div id="about-header"  style={{backgroundImage: `url('${image4}')`}}></div>
       </div>
       <div id="about" ref={aboutRef} style={{ height: '500px', width: '500px'}}>
         <About />

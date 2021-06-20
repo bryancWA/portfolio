@@ -40,6 +40,30 @@ body {
   float: right;
   margin: 10% 50px 20px 35%;
 }
+
+#name-div h2 {
+  font-family: 'Dela Gothic One', cursive;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: 'Dela Gothic One', cursive;
+}
+
+p {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#title-div {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:400;
+}
+
+#menu-button {
+  float: left;
+  margin: 10% 35% 20px 50px;
+  height: 50px;
+}
 /* #landing-header::before {
   content: "";
   position: absolute;
@@ -68,6 +92,36 @@ body {
   justify-content: center;
   clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 84%);
   background-position: right top 35%;
+}
+
+#project-div {
+  width: 100%;
+  height: 100%;
+  margin: 0 45% 0 15%;
+
+}
+
+#project-div h2 {
+  margin-bottom: 100px;
+}
+
+#project-row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+
+}
+
+#snag-style {
+  margin: 0 50px 0 0;
+}
+
+#blue-style {
+  margin: 0 50px 0 50px;
+}
+
+#catwalk-style {
+  margin: 0 0 0 50px;
 }
 
 #about-header {
@@ -100,3 +154,4 @@ body {
   width: 100%;
   text-align: center;
 }
+

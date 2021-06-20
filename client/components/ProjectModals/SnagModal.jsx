@@ -56,8 +56,7 @@ const SnagModal = ({ openSnag, setOpenSnag }) => {
     , document.getElementById('portal')));
   } else {
     return (<div onClick={handleOpenModal}>
-      Open Snag
-      <img src={image} style={{height: '100px', width: '150px'}} alt="snag gif"/>
+      <img src={image} style={{height: '200px', width: '250px'}} alt="snag gif"/>
       </div>)
   }
 

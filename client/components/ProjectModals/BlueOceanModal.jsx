@@ -41,7 +41,7 @@ const BlueOceanModal = ({ openBlue, setOpenBlue }) => {
       <div>
         <div style={OVERLAY_STYLE} onClick={handleCloseModal}></div>
         <div style={MODAL_STYLE} onClick={handleCloseModal}>
-          <h3>Blue Ocean project description</h3>
+          <h3>Blue Ocean Project Description</h3>
           <p id="blue-ocean-paragraph">
             I worked with a team of engineers on creating a residential moving services application.
             This full-stack application was built with React to enhance dynamic rendering. We also decided to implement
@@ -63,8 +63,7 @@ const BlueOceanModal = ({ openBlue, setOpenBlue }) => {
     , document.getElementById('portal')));
   } else {
     return (<div onClick={handleOpenModal}>
-      Open Blue Ocean
-      <img src={image} style={{height: '100px', width: '150px'}}/>
+        <img src={image} style={{height: '200px', width: '250px'}}/>
       </div>)
   }
 
