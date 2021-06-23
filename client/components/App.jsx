@@ -58,12 +58,11 @@ const App = () => {
   return (
     <div style={{background: 'rgb(238, 241, 255)', top: '0', right: '0', bottom: '0', left: '0'}}>
       <div id="landing-info-container">
-        <div id="landing-header" style={{ height: '300px', width: '100%',
-        backgroundImage: `url('${image4}')`, 
-        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)'}}></div>
-        </div>
-      <div id='landing-info' style={{ height: '500px', width: '100%',}}>
-        <Button onClick={handleMenu} id="menu-button"><i className="fas fa-bars"></i></Button>
+         <div id="landing-header" style={{ height: '200px', width: '100%',
+          backgroundImage: `url('${image4}')`, 
+          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 85%)'}}>
+
+        <Button onClick={handleMenu} id="menu-button"><i className="fas fa-bars" style={{color: 'white'}}></i></Button>
         <Menu 
         anchorEl={anchorEl}
         style={{position: 'absolute' }}
@@ -74,6 +73,14 @@ const App = () => {
           <MenuItem  onClick={() => handleScroll('aboutRef')}>About</MenuItem>
           <MenuItem  onClick={() => handleScroll('contactRef')}>Contact</MenuItem>
         </Menu>
+          </div>
+        </div>
+      <div id='landing-info' style={{ height: '500px', width: '100%',}}>
+        <div id="snippet">
+          <h3> "I found myself, in a remote Alaskan bush town, with a scrub brush in hand,
+            on my hands and knees, cleaning the fish hold of a commercial fishing boat."
+          </h3>
+        </div>
         <div id="title_name">
           <div id="name-div" onClick={handleResumeModal} style={{textAlign: 'right', marginRight: '100px'}}>
             <h2 >Bryan</h2> 

@@ -44,9 +44,9 @@ const SnagModal = ({ openSnag, setOpenSnag }) => {
           <img src={image} alt="Snag Gif"/>
           <p id="snag-paragraph">This is my passion project. Having spent years recreating on rivers throughout the Pacific Northwest, my number one question throughout all of these years was, what does the river look like. In addition, it took some brain power to remember the river levels, height and/or discharge, at which I wanted to conduct my activity. Thus, Snag was born.
 
-            Using Google’s Geocode API, I quickly turned an address or a zip code into usable coordinates, and additionally offered Javascript’s native geolocation method for IP address location, which in turn I used to provide location parameters to the USGS Water Services API.
+            Using Google’s <span>Geocode API</span>, I quickly turned an address or a zip code into usable coordinates, and additionally offered Javascript’s native geolocation method for IP address location, which in turn I used to provide location parameters to the USGS Water Services API.
 
-            Next, I chose to build my database for user stored information using PostgreSQL, and I created queries using Express.js server. Therefore, user data could easily be compared to the live river data coming in from the API’s.
+            Next, I chose to build my database for user stored information using <span>PostgreSQL</span>, and I created queries using <span>Express</span> server. Therefore, user data could easily be compared to the live river data coming in from the API’s.
 
             As stated, this is my passion project and it is my passion to continue to work on it and hone my craft.
           </p>

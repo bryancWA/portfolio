@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import image from '../../../Images/smoveMainPage.png';
+import styles from '../../../public/styles.css';
 
 const BlueOceanModal = ({ openBlue, setOpenBlue }) => {
   
@@ -44,9 +45,9 @@ const BlueOceanModal = ({ openBlue, setOpenBlue }) => {
           <h3>Blue Ocean Project Description</h3>
           <p id="blue-ocean-paragraph">
             I worked with a team of engineers on creating a residential moving services application.
-            This full-stack application was built with React to enhance dynamic rendering. We also decided to implement
-            React Router for a multi-page user experience. Node.js and Express server were utilized to handle backend requests
-            and we utilized MongoDB for persistance of user-data. 
+            This full-stack application was built with <span style={{fontWeight: 'bold'}}>React</span> to enhance dynamic rendering. We also decided to implement
+            <span>React-router</span> for a multi-page user experience. <span>Node.js</span> and <span>Express</span> server were utilized to handle backend requests
+            and we utilized <span>MongoDB</span> for persistance of user-data. 
 
             As an autonomous team, we worked with the client and divided the workload into components and subcomponents. 
             My particular team was given the inventory component, where user's could store information about boxes. 
@@ -54,7 +55,7 @@ const BlueOceanModal = ({ openBlue, setOpenBlue }) => {
             and contents using a numeric I.D. system.
 
             Our main success was the turnaround time between meeting with the client and successful presentation of MVP. Due to our team's
-            reliance on organizational technologies such as Trello, and an effective agile development methodology we were able to 
+            reliance on organizational technologies such as <span>Trello</span>, and an effective agile development methodology we were able to 
             accomplish a lot in only 9 short days.
           </p>
           <img src={image} style={{height: '350px', width: '450px'}} alt="smove main page"/>

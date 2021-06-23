@@ -3,18 +3,6 @@ body {
 }
 
 
-#first-separator {
-  display: flex;
-  flex-direction: row;
-}
-
-#first-separator .upswing {
-  width: 100%;
-  margin: 10px 0;
-  height: 3px;
-  background: rgb(238, 241, 255);
-  transform: skew(0deg, 15deg);
-}
 /* #landing-info-container {
   height: 302px;
   width: 100%;
@@ -23,8 +11,8 @@ body {
 } */
 #landing-header {
   background-position: right top 32%;
-  height: 600px;
-  width: 400px;
+  /* height: 300px;
+  width: 400px; */
   background-repeat: no-repeat;
 }
 
@@ -33,6 +21,12 @@ body {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+}
+
+#snippet {
+  width: 300px;
+  margin: 10% 50px 20px 10%;
+  font-style:italic;
 }
 
 #title_name {
@@ -61,7 +55,7 @@ p {
 
 #menu-button {
   float: left;
-  margin: 10% 35% 20px 50px;
+  margin: 50px 0 50px 50px;
   height: 50px;
 }
 /* #landing-header::before {
@@ -102,7 +96,7 @@ p {
 }
 
 #project-div h2 {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 #project-row {
@@ -116,20 +110,80 @@ p {
   margin: 0 50px 0 0;
 }
 
+#snag-paragraph span {
+  font-weight: bold;
+  font-family: Times Roman Numeral, sans-serif;
+}
+
 #blue-style {
   margin: 0 50px 0 50px;
+}
+
+#blue-ocean-paragraph span {
+  font-weight:bold;
+  font-family: Times Roman Numeral, sans-serif;
+  
 }
 
 #catwalk-style {
   margin: 0 0 0 50px;
 }
 
+#system-design span, #frontend-design span {
+  font-weight:bold;
+  font-family: Times Roman Numeral, sans-serif;
+}
+
 #about-header {
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-position: right top 45%;
   clip-path: polygon(0 0, 100% 31%, 100% 58%, 0 78%);
 }
+
+#about {
+  width: 100%;
+  height: 500px;
+  margin: 0 15% 0 15%;
+}
+
+#about-div {
+  width: 100%;
+  height: 500px;
+  margin: 0 0 0 75%;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+#about-div h2 {
+  float: right;
+  margin-right: 30px;
+}
+
+#about-content {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+#tech-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  text-align: center;
+  max-width: 300px;
+  margin-right: 50px;
+}
+
+#tech-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+
+}
+
 
 #contact-header {
   height: 400px;
@@ -145,15 +199,7 @@ p {
   clip-path: polygon(0 38%, 100% 0, 100% 100%, 0 100%);
 }
 
-#about {
-  width: 100%;
-  margin: 20px 30% 20px 30%;
-}
-#about-div {
-  margin: 20px 30% 20px 30%;
-  width: 100%;
-  text-align: center;
-}
+
 
 #contact-components {
   display: flex;
