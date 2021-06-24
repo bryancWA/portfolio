@@ -15,17 +15,17 @@ const Project = () => {
         <div id="snag-style">
           <h3>Snag</h3>
           <SnagModal openSnag={openSnag} setOpenSnag={setOpenSnag}/>
-          <p>This is my passion project. Having spent years recreating on rivers...</p>
+          <p style={{width: '250px'}}>This is my passion project. Having spent years recreating on rivers...</p>
         </div>
         <div id="blue-style">
           <h3>Blue Ocean - Smove</h3>
           <BlueOceanModal openBlue={openBlue} setOpenBlue={setOpenBlue}/>
-          <p>I worked with a team of engineers on creating a residential moving services app...</p>
+          <p style={{width: '250px'}}>I worked with a team of engineers on creating a residential moving services app...</p>
         </div>
         <div id="catwalk-style">
           <h3>Project Catwalk</h3>
           <ProjCatwalkModal openCatwalk={openCatwalk} setOpenCatwalk={setOpenCatwalk}/>
-          <p>...I built out the functionality of the customer-facing portal for an e-commerce platform.</p>
+          <p style={{width: '250px'}}>...I built out the functionality of the customer-facing portal for an e-commerce platform.</p>
         </div>
       </div>
     </div>

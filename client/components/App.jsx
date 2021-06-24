@@ -56,7 +56,7 @@ const App = () => {
   }, [scrollRef])
 
   return (
-    <div style={{background: 'rgb(238, 241, 255)', top: '0', right: '0', bottom: '0', left: '0'}}>
+    <div style={{background: 'rgb(238, 241, 255)', top: '0', right: '0', bottom: '0', left: '0', width: '100%'}}>
       <div id="landing-info-container">
          <div id="landing-header" style={{ height: '200px', width: '100%',
           backgroundImage: `url('${image4}')`, 
@@ -95,13 +95,13 @@ const App = () => {
       <div id="project-header-container">
         <div id="project-header"  style={{backgroundImage: `url('${image4}')`}}></div>
       </div>
-      <div id="project-div-container" ref={projRef} style={{  height: '500px', width: '500px'}}>
+      <div id="project-div-container" ref={projRef}>
         <Project />
       </div>
       <div id="about-header-container">
         <div id="about-header"  style={{backgroundImage: `url('${image4}')`}}></div>
       </div>
-      <div id="about" ref={aboutRef} style={{ height: '500px', width: '500px'}}>
+      <div id="about" ref={aboutRef}>
         <About />
       </div>
       <div id="contact-header-container">

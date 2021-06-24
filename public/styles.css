@@ -1,8 +1,11 @@
 body {
   margin: 0 0;
+  width: 100%
 }
 
-
+#app {
+  max-width: 100%;
+}
 /* #landing-info-container {
   height: 302px;
   width: 100%;
@@ -91,7 +94,7 @@ p {
 #project-div {
   width: 100%;
   height: 100%;
-  margin: 0 45% 0 15%;
+  margin: 0 0 0 5%;
 
 }
 
@@ -102,12 +105,13 @@ p {
 #project-row {
   display: flex;
   flex-direction: row;
-  margin-left: 200px;
+  
 
 }
 
 #snag-style {
-  margin: 0 50px 0 0;
+  margin: 0 1.5% 0 0;
+  width: 30%;
 }
 
 #snag-paragraph span {
@@ -116,7 +120,8 @@ p {
 }
 
 #blue-style {
-  margin: 0 50px 0 50px;
+  margin: 0 1.5% 0 1.5%;
+  width: 30%;
 }
 
 #blue-ocean-paragraph span {
@@ -126,7 +131,8 @@ p {
 }
 
 #catwalk-style {
-  margin: 0 0 0 50px;
+  margin: 0 0 0 1.5%;
+  width: 30%;
 }
 
 #system-design span, #frontend-design span {
@@ -135,46 +141,63 @@ p {
 }
 
 #about-header {
-  height: 300px;
+  height: 250px;
   width: 100%;
   background-position: right top 45%;
-  clip-path: polygon(0 0, 100% 31%, 100% 58%, 0 78%);
+  clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
 }
 
 #about {
   width: 100%;
   height: 500px;
-  margin: 0 15% 0 15%;
+  /* margin: 0  0 15%; */
 }
 
 #about-div {
   width: 100%;
-  height: 500px;
-  margin: 0 0 0 75%;
-  padding: 10px 10px;
-  text-align: center;
+  height: 100%;
+  /* margin: 0 0 0 75%; */
+  
 }
 
-#about-div h2 {
-  float: right;
-  margin-right: 30px;
+#about-div > h2 {
+  
+  margin-left: 75%;
 }
 
 #about-content {
-  width: 700px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  height: 500px;
+  height: 100%;
+  margin-left: 5%;
 }
+
+#personal-paragraph {
+  width: 25%;
+  height: 100%;
+  margin: 0 2% 0 0;
+}
+
+#about-paragraph {
+  width: 35%;
+  height: 100%;
+  margin: 0 2% 0 2%;
+}
+
 
 #tech-list {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 2%;
   text-align: center;
-  max-width: 300px;
-  margin-right: 50px;
+  max-width: 35%;
 }
+
+#tech-list h3 {
+  width: 180px;
+}
+
 
 #tech-wrap {
   display: flex;
@@ -186,7 +209,7 @@ p {
 
 
 #contact-header {
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-position: right top 55%;
   clip-path: polygon(0 0, 100% 51%, 100% 100%, 0 100%);
