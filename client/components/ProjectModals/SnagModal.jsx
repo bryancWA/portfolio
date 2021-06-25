@@ -41,7 +41,7 @@ const SnagModal = ({ openSnag, setOpenSnag }) => {
         <div style={OVERLAY_STYLE} onClick={handleCloseModal}></div>
         <div style={MODAL_STYLE} onClick={handleCloseModal}>
           <h2>Snag project description</h2>
-          <img src={image} alt="Snag Gif"/>
+          <img src={image} alt="Snag Gif" style={{width: '600px'}}/>
           <p id="snag-paragraph">This is my passion project. Having spent years recreating on rivers throughout the Pacific Northwest, my number one question throughout all of these years was, what does the river look like. In addition, it took some brain power to remember the river levels, height and/or discharge, at which I wanted to conduct my activity. Thus, Snag was born.
 
             Using Google’s <span>Geocode API</span>, I quickly turned an address or a zip code into usable coordinates, and additionally offered Javascript’s native geolocation method for IP address location, which in turn I used to provide location parameters to the USGS Water Services API.

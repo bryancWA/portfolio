@@ -1,4 +1,6 @@
 import image from '../../Images/k6icon.png';
+import reactRouter from '../../Images/reactRouterIcon.png';
+import axiosIcon from '../../Images/axiosIcon.png';
 
 
 const techList = [
@@ -8,7 +10,7 @@ const techList = [
   {name: 'React',
   icon: 'https://icongr.am/devicon/react-original.svg?size=128&color=currentColor'},
   {name: 'React Router',
-  icon: ''},
+  icon: `${reactRouter}`},
   {name: 'HTML/CSS',
   icon: 'https://icongr.am/devicon/html5-original-wordmark.svg?size=128&color=currentColor' },
   {name: 'Webpack/Babel',
@@ -30,7 +32,7 @@ const techList = [
   {name: 'MongoDB',
   icon: 'https://icongr.am/devicon/mongodb-original-wordmark.svg?size=128&color=currentColor'},
   {name: 'Axios',
-  icon: ''},
+  icon: `${axiosIcon}`},
   {name: 'Amazon Web Service',
   icon: 'https://icongr.am/devicon/amazonwebservices-plain-wordmark.svg?size=128&color=currentColor'},
   {name: 'NGINX',

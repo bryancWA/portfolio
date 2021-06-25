@@ -38,9 +38,14 @@ body {
   margin: 10% 50px 20px 35%;
 }
 
+
 #name-div h2 {
   font-family: 'Dela Gothic One', cursive;
   text-decoration: underline;
+}
+
+#name-div:hover {
+  cursor:pointer;
 }
 
 h2 {
@@ -55,6 +60,7 @@ p {
   font-family: 'Cormorant Garamond', serif;
   font-weight:400;
 }
+
 
 #menu-button {
   float: left;
@@ -112,6 +118,10 @@ p {
 #snag-style {
   margin: 0 1.5% 0 0;
   width: 30%;
+} 
+
+#snag-style:hover {
+  cursor:pointer;
 }
 
 #snag-paragraph span {
@@ -124,6 +134,10 @@ p {
   width: 30%;
 }
 
+#blue-style:hover {
+  cursor: pointer;
+}
+
 #blue-ocean-paragraph span {
   font-weight:bold;
   font-family: Times Roman Numeral, sans-serif;
@@ -133,6 +147,10 @@ p {
 #catwalk-style {
   margin: 0 0 0 1.5%;
   width: 30%;
+}
+
+#catwalk-style:hover {
+  cursor: pointer;
 }
 
 #system-design span, #frontend-design span {
@@ -240,4 +258,8 @@ p {
 
 #contact-div h2 {
   margin: 50px 0 100px 100px;
+}
+
+.contact-info:hover {
+  cursor:pointer;
 }
