@@ -32,6 +32,16 @@ body {
   font-style:italic;
 }
 
+#snippet h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+#resumeImage {
+  height: 750px;
+  width: 550px;
+}
+
+
 #title_name {
   justify-content: center;
   float: right;
@@ -40,20 +50,22 @@ body {
 
 
 #name-div h2 {
-  font-family: 'Dela Gothic One', cursive;
+  font-family: 'Didact Gothic', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   text-decoration: underline;
 }
 
 #name-div:hover {
   cursor:pointer;
+  font-size: 20px;
 }
 
-h2 {
-  font-family: 'Dela Gothic One', cursive;
+h2, h3 {
+ font-family: 'Roboto', sans-serif;
 }
 
 p {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #title-div {
@@ -65,7 +77,7 @@ p {
 #menu-button {
   float: left;
   margin: 50px 0 50px 50px;
-  height: 50px;
+  font-size: 40px;
 }
 /* #landing-header::before {
   content: "";
@@ -111,6 +123,7 @@ p {
 #project-row {
   display: flex;
   flex-direction: row;
+  z-index: auto;
   
 
 }
@@ -122,6 +135,7 @@ p {
 
 #snag-style:hover {
   cursor:pointer;
+  font-size: 20px;
 }
 
 #snag-paragraph span {
@@ -136,6 +150,7 @@ p {
 
 #blue-style:hover {
   cursor: pointer;
+  font-size: 20px;
 }
 
 #blue-ocean-paragraph span {
@@ -147,10 +162,12 @@ p {
 #catwalk-style {
   margin: 0 0 0 1.5%;
   width: 30%;
+  
 }
 
 #catwalk-style:hover {
   cursor: pointer;
+  font-size: 20px;
 }
 
 #system-design span, #frontend-design span {
@@ -168,6 +185,7 @@ p {
 #about {
   width: 100%;
   height: 500px;
+  padding-right: 50px;
   /* margin: 0  0 15%; */
 }
 
@@ -188,7 +206,8 @@ p {
   display: flex;
   flex-direction: row;
   height: 100%;
-  margin-left: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 #personal-paragraph {
@@ -203,6 +222,15 @@ p {
   margin: 0 2% 0 2%;
 }
 
+#about-paragraph:hover {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#personal-paragraph:hover {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 #tech-list {
   display: flex;
@@ -225,6 +253,15 @@ p {
 
 }
 
+.techIcon img {
+  height: 30px;
+  width: 30px;
+}
+
+.techIcon img:hover {
+  height: 50px;
+  width: 50px;
+}
 
 #contact-header {
   height: 300px;
@@ -249,6 +286,10 @@ p {
   width: 600px;
 }
 
+#contact-components img:first-child {
+  margin-top: 20px;
+}
+
 #contact-info-div {
   display: flex;
   flex-direction: column;
@@ -260,6 +301,64 @@ p {
   margin: 50px 0 100px 100px;
 }
 
+.contact-info {
+  font-size: 50px;
+  height: 100px;
+  margin-left: 10px;
+
+}
+
+.contact-info p {
+  margin-top: 0px;
+}
+
+.contact-info img {
+  height: 50px;
+  width: 50px;
+}
+
 .contact-info:hover {
   cursor:pointer;
+  /* transform: translate(25%) */
+  
+
+}
+
+.contact-info img:hover {
+  height: 75px;
+  width: 75px;
+}
+
+.contact-info i:hover {
+  font-size: 75px;
+}
+
+@media screen and (max-width: 1050px) {
+  #project-div-container, #about {
+    height: 900px;
+  }
+
+  #tech-wrap {
+    max-height: 800px;
+  }
+  
+  #about-content, #project-row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 900px;
+  }
+  
+  #about-content {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+}
+
+@media print {
+  #resumeImage {
+    width: 750px;
+    height: 1050px;
+    margin-left: 25px;
+  }
 }

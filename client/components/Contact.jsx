@@ -15,13 +15,13 @@ const Contact = () => {
         alt="Bryan Clark profile picture"/>
         <div id="contact-info-div">
           <div className="contact-info" onClick={() => window.location=`${githubLink}`}>
-            <p ><img src={image2} alt="github icon" style={{height: '20px', width: '20px'}}/>bryancWA</p>
+            <p><img src={image2} alt="github icon"/></p>
           </div>
           <div className="contact-info" onClick={() => window.open('mailto:clark.bryanr@gmail.com?subject=Greetings+Fellow+Coder')}>
-          <p><i className="far fa-envelope"></i>clark.bryanr@gmail.com</p>
+          <p><i className="far fa-envelope"></i></p>
           </div>
           <div className="contact-info" onClick={() => window.location=`${linkedInLink}`}>
-            <p ><i className="fab fa-linkedin"></i>https://www.linkedin.com/in/bryan-r-clark/</p>
+            <p ><i className="fab fa-linkedin"></i></p>
           </div>
         </div>
       </div>

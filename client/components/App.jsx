@@ -4,7 +4,7 @@ import About from './About.jsx';
 import Contact from './Contact.jsx';
 import ResumeModal from './ResumeModal.jsx';
 import { Menu, MenuItem, Button } from '@material-ui/core';
-import image3 from '../../Images/spiderTree.jpeg';
+import image3 from '../../Images/grayFishSchool2.jpg';
 import styles from '../../public/styles.css';
 import image4 from '../../Images/riverRocks.jpeg';
 import image5 from '../../Images/logTrail.jpeg';
@@ -56,7 +56,7 @@ const App = () => {
   }, [scrollRef])
 
   return (
-    <div style={{background: 'rgb(238, 241, 255)', top: '0', right: '0', bottom: '0', left: '0', width: '100%'}}>
+    <div style={{ top: '0', right: '0', bottom: '0', left: '0', width: '100%', overflow: 'hidden'}}>
       <div id="landing-info-container">
          <div id="landing-header" style={{ height: '200px', width: '100%',
           backgroundImage: `url('${image4}')`, 

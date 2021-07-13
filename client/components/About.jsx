@@ -10,8 +10,7 @@ const About = () => {
       <div id="about-content">
         <div id="personal-paragraph">
           <h3>Work Life Balance</h3>
-          <p>In my spare time, I am a man of the water and outdoors. I enjoy spey style fly fishing, and if given an opportunity
-            , I will talk your ear off about it. I also like deep sea fishing, climbing, skiing, backpacking, and camping with my significant other and our dogs.
+          <p>In my spare time, I am a man of the water and outdoors. I enjoy spey style fly fishing even if I'm not catching anything. I also like deep sea fishing, climbing, skiing, backpacking, and camping with my significant other and our dogs.
             Someone once told me that "a river is a gift", and I hold this quote in high regard. If we want to continue recreating in wild places, it is our 
             responsibility to protect the wild places.
           </p>
@@ -27,8 +26,8 @@ const About = () => {
           <h3>Technical Experience</h3>
           <div id="tech-wrap">
             {techList.map((tech, index) => (
-              <div key={tech + index}>
-                {tech.icon !== '' ? <img src={tech.icon} style={{height: '30px', width: '30px'}}/> : null}
+              <div className="techIcon"  key={tech + index}>
+                {tech.icon !== '' ? <img src={tech.icon}/> : null}
                 <p>{tech.name}</p>
               </div>
             ))}
