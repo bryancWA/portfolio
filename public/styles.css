@@ -362,3 +362,58 @@ p {
     margin-left: 25px;
   }
 }
+
+@media screen and (max-width: 600px) {
+
+  #landing-info {
+    width: 85%;
+    margin-left: 10%;
+  }
+
+  #title_name {
+    margin-left: 5%;
+  }
+  
+  #project-div-container, #project-div {
+    width: 100%;
+    height: 1500px;
+  }
+
+  #project-row{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+  }
+
+  #snag-style, #blue-style, #catwalk-style {
+    width: 85%;
+    height: 400px;
+
+  }
+  
+  
+  #about, #about-content {
+    height: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about-paragraph, #tech-wrap {
+    width: 85%;
+    margin-bottom: 30px;
+    height: 500px;
+  }
+
+  #personal-paragraph {
+    width: 85%;
+    margin-bottom: 30px;
+    height: 200px;
+  }
+
+  #tech-wrap {
+    max-height: 600px;
+  }
+}
