@@ -4,10 +4,9 @@ import About from './About.jsx';
 import Contact from './Contact.jsx';
 import ResumeModal from './ResumeModal.jsx';
 import { Menu, MenuItem, Button } from '@material-ui/core';
-import image3 from '../../Images/grayFishSchool2.jpg';
 import styles from '../../public/styles.css';
 import image4 from '../../Images/riverRocks.jpeg';
-import image5 from '../../Images/logTrail.jpeg';
+
 
 
 const App = () => {
